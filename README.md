@@ -57,3 +57,14 @@ converts an array to an object
 <{commanderTom':23,
 derekZlander:40
 'hansel':18}
+
+TRY
+gives defined error message if code wrong
+
+try{
+4+5
+}catch{
+console.log('that didn't work')
+}
+
+
