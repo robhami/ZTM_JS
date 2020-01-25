@@ -31,7 +31,7 @@ console.log(trapped.flat(Infinity))
 //#5 Clean up this email to have no whitespaces. Make the answer be in a single line (return a new string):
 const userEmail3 = '     cannotfillemailformcorrectly@gmail.com   '
 
-let userEmail4=userEmail3.trimStart();
+let userEmail4=userEmail3.trimStart().trimEnd();
 
 console.log(userEmail4);
 
@@ -65,3 +65,13 @@ updatedUsersArray = usersArray.map((user) => [user[0], user[1] * 2])
 let newObj=Object.fromEntries(newArray)
 
 console.log(newObj);
+
+const entries2 =['bob','sally',,,,,,,,,,,'cindy']
+
+entries2.flat()
+
+console.log(entries2);
+
+const entriesmap = entries2.flatMap(x=>x+' wilson')
+
+console.log(entriesmap);
