@@ -1,4 +1,4 @@
-# ZeroToMastery
+
 
 FUNCTIONS
 are blocks of code that perform actions
