@@ -3,15 +3,15 @@
 Previously learnt loops
 const basket =['apples,'oranges','grapes'];
 
-for (let i=0; basket.length; i++){
-  console.log(basket[i];
-}
+  for (let i=0; basket.length; i++){
+    console.log(basket[i];
+  }
 
-basket.forEach(item=> {
+  basket.forEach(item=> {
 
-  console.log(item);
-  
-}
+    console.log(item);
+
+  }
 
 Also Do and While. 
 
@@ -20,9 +20,9 @@ this is iterating- can do over arrays, strings, (i.e. they are iterable)
 
 create variable (item- below) and loop through
 
-for (item of basket){
-  console.log(item);
- }
+  for (item of basket){
+    console.log(item);
+   }
  
 This returns:
   apples
@@ -35,15 +35,15 @@ This returns:
  with objects you are not iterating you are enumerating (object is enumerable if it allows you to see the properties). 
 
  
- const detailedBasket = {
-   apples: 5,
-   oranges: 10,
-   grapes: 1000, 
- }
+   const detailedBasket = {
+     apples: 5,
+     oranges: 10,
+     grapes: 1000, 
+   }
  
- for (item in detailedBasket) {
-  console.log(item)
- }
+   for (item in detailedBasket) {
+    console.log(item)
+   }
 
 This returns:
   apples
@@ -53,9 +53,9 @@ This returns:
  
  Cannot use FOR OF LOOP with objects. However can do FOR IN LOOP with arrays & strings
  
- for (item in basket) {
-  console.log(item)
- }
+   for (item in basket) {
+    console.log(item)
+   }
  
  This returns: 
   0
@@ -64,11 +64,11 @@ This returns:
   
   Because arrays are like an object with the following properties:
   
-  basket = {
-    0: 'apples',
-    1: 'oranges',
-    2: 'grapes'
-  }
+    basket = {
+      0: 'apples',
+      1: 'oranges',
+      2: 'grapes'
+    }
   
   Can also use the following on objects:
   Object.keys
