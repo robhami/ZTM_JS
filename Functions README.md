@@ -6,10 +6,12 @@ in built functions exist (e.g. alert(), prompt())
 
 Function name followed by brackets executes (or calls) a function:
 
-e.g. prompt()
+e.g. 
+```
+prompt()
 
 alert("hi there!");
-
+```
 Text inside brackets is called arguments, can have multiple arguments
 
 e.g. console.log("Hi There!", How are you")
@@ -38,6 +40,8 @@ function sing(){
   
  sing();
  ```
+ 
+ ***ARGUMENTS***
  If i want to change song, i have to edit the function or create new song: 
  ```
  function sing2() {
@@ -54,6 +58,8 @@ function sing(){
  sing("Laaa dee daaa");
  ```
  This puts argument into function.
+ 
+ ***RETURN NEEDED IN FUNCTIONS***
  ```
  function multiply (a,b) {
   return(a*b);
@@ -75,6 +81,7 @@ function sing(){
     
  multiply(5,5)
  ```
+ ***FUNCTIONS ARE VARIABLES***
  In JS functions are variables, we are able to assign functions like this:
  ```
  var a = function multiply (a,b) {
@@ -89,6 +96,7 @@ function sing(){
   ```
   a();
   ```
+  ****NESTED FUNCTIONS***
   Can also do nested functions: 
   ```
   alert(multiply(3,4));
