@@ -1,6 +1,7 @@
 
 
-FUNCTIONS
+###FUNCTIONS###
+
 are blocks of code that perform actions
 in built functions exist (e.g. alert(), prompt())
 
@@ -42,6 +43,7 @@ function sing(){
  ```
  
  ***ARGUMENTS***
+ 
  If i want to change song, i have to edit the function or create new song: 
  ```
  function sing2() {
@@ -82,6 +84,7 @@ function sing(){
  multiply(5,5)
  ```
  ***FUNCTIONS ARE VARIABLES***
+ 
  In JS functions are variables, we are able to assign functions like this:
  ```
  var a = function multiply (a,b) {
