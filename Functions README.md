@@ -1,6 +1,6 @@
 
 
-#FUNCTIONS
+# FUNCTIONS
 
 are blocks of code that perform actions
 in built functions exist (e.g. alert(), prompt())
