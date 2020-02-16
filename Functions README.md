@@ -14,16 +14,16 @@ Text inside brackets is called arguments, can have multiple arguments
 
 e.g. console.log("Hi There!", How are you")
 
-FUNCTION DECLARATION
+***FUNCTION DECLARATION***
 ```
 function sayHello() {
   console.log("Hello");
 }
 
 sayHello();
-
-FUNCTION EXPRESSION
-
+```
+***FUNCTION EXPRESSION***
+```
 var sayBye = function () {
 
   console.log("Bye");
