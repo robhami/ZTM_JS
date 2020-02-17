@@ -34,6 +34,8 @@ var sayBye = function () {
 
 sayBye();
 
+ ***ARGUMENTS***
+ 
 function sing(){
   console.log("AHHHHHHHH");
   console.log("TEEEEEEEE");
@@ -41,8 +43,6 @@ function sing(){
   
  sing();
  ```
- 
- ***ARGUMENTS***
  
  If i want to change song, i have to edit the function or create new song: 
  ```
