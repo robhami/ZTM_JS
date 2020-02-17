@@ -33,7 +33,7 @@ var sayBye = function () {
 }
 
 sayBye();
-'''
+```
 
 ***ARGUMENTS***
  
@@ -101,8 +101,11 @@ function sing(){
   ```
   a();
   ```
-  ****NESTED FUNCTIONS***
+  
+  ***NESTED FUNCTIONS***
+  
   Can also do nested functions: 
+  
   ```
   alert(multiply(3,4));
   ```
