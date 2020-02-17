@@ -33,9 +33,11 @@ var sayBye = function () {
 }
 
 sayBye();
+'''
 
- ***ARGUMENTS***
+***ARGUMENTS***
  
+ ```
 function sing(){
   console.log("AHHHHHHHH");
   console.log("TEEEEEEEE");
