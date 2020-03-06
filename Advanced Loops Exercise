@@ -1,76 +1,124 @@
-Previously learnt loops
-const basket =['apples,'oranges','grapes'];
-
-for (let i=0; basket.length; i++){
-  console.log(basket[i];
+```
+const basket = ['apples', 'oranges', 'grapes'];
+const detailedBasket = {
+  apples: 5,
+  oranges: 10,
+  grapes: 1000
 }
 
-basket.forEach(item=> {
-
-  console.log(item);
-  
+//1
+for (let i = 0; i < basket.length; i++) {
+  console.log(basket[i]);
 }
 
-Also Do and While. 
-
-FOR OF LOOP
-this is iterating- can do over arrays, strings, (i.e. they are iterable)
-
-create variable (item- below) and loop through
-
-for (item of basket){
+//2
+basket.forEach(item => {
   console.log(item);
- }
- 
-This returns:
-  apples
-  oranges
-  grapes
+})
 
- 
- FOR IN LOOP
- allows you to see properties of objects
- with objects you are not iterating you are enumerating (object is enumerable if it allows you to see the properties). 
+for (item in detailedBasket) {
+  console.log(item);
+}
 
- 
- const detailedBasket = {
-   apples: 5,
-   oranges: 10,
-   grapes: 1000, 
- }
- 
- for (item in detailedBasket) {
-  console.log(item)
- }
+for (item of basket) {
+  console.log(item);
+}
 
-This returns:
-  apples
-  oranges
-  grapes
-  <undefined
- 
- Cannot use FOR OF LOOP with objects. However can do FOR IN LOOP with arrays & strings
- 
- for (item in basket) {
-  console.log(item)
- }
- 
- This returns: 
-  0
-  1
-  2
-  
-  Because arrays are like an object with the following properties:
-  
-  basket = {
-    0: 'apples',
-    1: 'oranges',
-    2: 'grapes'
+// Question #1:
+// create a function called biggestNumberInArray() that takes
+// an array as a parameter and returns the biggest number.
+// biggestNumberInArray([-1,0,3,100, 99, 2, 99]) should return 100;
+// Use at least 3 different types of javascript loops to write this:
+const array = [-1,0,3,100, 99, 2, 99] // should return 100
+const array2 = ['a', 3, 4, 2] // should return 4
+const array3 = [] // should return 0
+
+function biggestNumberInArray() {
+
+let result=0;
+
+  array.forEach(x=>{
+
+    if (array[x]>result){
+      result=array[x];
+    }
+  })
+console.log(result);
+
+}
+
+biggestNumberInArray();
+
+
+function biggestNumberInArray2() {
+
+let result=0;
+
+  for (let i=0; i<array2.length; i++){
+
+    if (array2[i]>result){
+      result=array2[i];
+    }
   }
+console.log(result);
+
+}
+
+biggestNumberInArray2();
+
+function biggestNumberInArray3() {
+let result=0;
+for (y of array3) {
   
-  Can also use the following on objects:
-  Object.keys
-  Object.entries
+    if (array3[y]>result){
+      result=array3[y];
+    }
+  }
+console.log(result);
+
+}
+
+biggestNumberInArray3();
+
+
+function biggestNumberInArray4() {
+let result=0;
+for (z in array3) {
   
+    if (array3[z]>result){
+      result=array3[z];
+    }
+  }
+console.log(result);
+
+}
+
+biggestNumberInArray4();
+
+
+// Question #2:
+// Write a function checkBasket() that lets you know if the item is in the basket or not
+amazonBasket = {
+  glasses: 1,
+  books: 2,
+  floss: 100
+}
+
+function checkBasket(basket, lookingFor) {
+  for (things in basket){
+
+    if(things===lookingFor){
+        return"found";
+        //console.log("found");
+ }
+
+    
+  }
+  return 'That does not exist';
+}
+
+checkBasket(amazonBasket,"books");
+
+```
   
  
