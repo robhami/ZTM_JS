@@ -4,6 +4,34 @@ A program needs to:
   
   Javascript engine consists of two parts:
   
-  1. Memory heap:
-  2. Call stack: 
-  
+  1. Memory heap: memory allocation happens 
+  2. Call stack: code read and executed, tells where u r in program
+ 
+ Memory used by assigning variables
+ ```
+  const a=1;
+  const b=10;
+  const a=100;
+```
+
+Memory leaks happen due unused just laying around, e.g. glovbal variables not cleaned up can cause this. 
+
+Call stack
+
+Reads and executes in order of code then removes line after it executes:
+
+```
+console.log('1');
+console.log('2');
+console.log('3');
+
+```
+
+```
+const one =()=>{
+  const two = () => {
+    console.log('4');
+  }
+  two();
+}
+ ```
