@@ -35,3 +35,18 @@ const one =()=>{
   two();
 }
  ```
+ 
+ If call one then:
+ 
+ ```
+ >one();
+ 
+ <4
+ ```
+ 
+ Call stack first ran one function, then we run two function which runs console.log('4'). 
+ Then removes console.log(4), two and one functions in that order. then call stack is empty now. 
+ 
+ Javascript is a single threaded language that is non blocking-
+ 
+ Single threaded means it only has one call stack- it can only do one thing at a time. A call stack is first in last out
