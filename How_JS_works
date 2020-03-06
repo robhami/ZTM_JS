@@ -1,0 +1,9 @@
+A program needs to: 
+  1. allocate memory
+  2. parse and execute
+  
+  Javascript engine consists of two parts:
+  
+  1. Memory heap:
+  2. Call stack: 
+  
