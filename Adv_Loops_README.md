@@ -2,13 +2,17 @@
 
 ### Previously learnt loops
 
+
+#### For Loop
 ```
 const basket =['apples,'oranges','grapes'];
 
   for (let i=0; basket.length; i++){
     console.log(basket[i];
   }
-
+```
+#### ForEach Loop
+```
   basket.forEach(item=> {
 
     console.log(item);
