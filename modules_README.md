@@ -1,6 +1,6 @@
 # ZeroToMastery
 
-###Inline script###
+### Inline script ###
 
 Initially used in inline scripts: 
 
@@ -27,7 +27,7 @@ e.g.
   1. Lack of code usability 
   2. Pollution of Global Namespace- e.g. once I use 'a' as a variable in window object, can never use it again
   
-  ###Script tags ref separate files###
+  ### Script tags ref separate files ###
   
   Issues:
   1. Every page needs them
