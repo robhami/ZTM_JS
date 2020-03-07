@@ -1,6 +1,6 @@
+# Advanced Loops
 
-
-Previously learnt loops
+# Previously learnt loops
 const basket =['apples,'oranges','grapes'];
 
   for (let i=0; basket.length; i++){
@@ -15,7 +15,7 @@ const basket =['apples,'oranges','grapes'];
 
 Also Do and While. 
 
-FOR OF LOOP
+# FOR OF LOOP
 this is iterating- can do over arrays, strings, (i.e. they are iterable)
 
 create variable (item- below) and loop through
@@ -30,7 +30,7 @@ This returns:
   grapes
 
  
- FOR IN LOOP
+ # FOR IN LOOP
  allows you to see properties of objects
  with objects you are not iterating you are enumerating (object is enumerable if it allows you to see the properties). 
 
