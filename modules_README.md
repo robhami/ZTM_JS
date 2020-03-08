@@ -36,4 +36,48 @@ e.g.
   3. Pollutes Global Namespace still- as all in window object still
   
   
-  ### Immediately Invoked Function Execution ###
+  ### Immediately Invoked Function Execution (IIFE) ###
+  
+
+  JS File #1
+   
+ ```
+  var myApp = {}
+ 
+ ```
+  
+ JS File #2
+  
+ ```
+  
+  (function(){
+    myApp.add = function(a,b) {
+      return a + b;
+    }
+  })();
+  
+  ```
+  
+  () after calls it. This keeps any created variables inside function not in window object, so don't pollute Global Namespace.
+  Order of files still an issue. 
+  
+  ### Browserify ###
+  
+  JS file #1
+  
+  
+  ```
+  module.exports = function add(a,b){
+    return a+b;
+  }
+  
+  ```
+  
+  JS file #2 (assuming
+  
+  ```
+  var add = require ("./add");
+  ```
+  
+  
+  
