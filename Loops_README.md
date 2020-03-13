@@ -1,4 +1,8 @@
-# ZeroToMastery
+# ZeroToMastery- Loops
+
+Loops are handy, if you want to run the same code over and over again, each time with a different value.
+
+Often this is the case when working with arrays:
 
 ```
 var todos = [
@@ -12,6 +16,8 @@ var todos = [
 ```
 
 #### FOR LOOP ####
+
+Loops through a block of code a number of times.
 
 ```
 for (var i=0; i<todos.length; i++) {
@@ -40,6 +46,8 @@ console.log (todos);
 ```
 
 #### WHILE LOOP ####
+Loops through a block of code while a specified condition is true
+Need to increase or decrease variable used in the condition otherwisw loop never ends and it crashes. 
 
 Counting Up
 ```
@@ -67,6 +75,8 @@ var counterTwo = 10
 ```
 
 #### DO WHILE LOOP ####
+also loops through a block of code while a specified condition is true
+However it exceutes code block once before checking if condition is true. So will always execute once even if condition is false. 
 
 ```
 do {
@@ -76,21 +86,7 @@ do {
 
 ```
 
-
-
-
-```
-var todos = [
-
-	"clean room",
-	"brush teeth",
-	"exercise",
-	"study JavaScript",
-	"eat healthy"
-
-];
-
-var todosLength=todos.length;
+#### FOREACH LOOP ####
 
 for (var i=0; i<todosLength; i++) {
 
