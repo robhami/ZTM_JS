@@ -46,10 +46,10 @@ console.log (todos);
 ```
 
 #### WHILE LOOP ####
-Loops through a block of code while a specified condition is true
+Loops through a block of code while a specified condition is true.
 Need to increase or decrease variable used in the condition otherwisw loop never ends and it crashes. 
 
-Counting Up
+#####Counting Up#####
 ```
 var counterOne=0;
 
@@ -60,7 +60,7 @@ while(counterOne<10) {
 }
 ```
 
-Counting Down
+#####Counting Down#####
 
 ```
 var counterOne=10;
@@ -87,7 +87,12 @@ do {
 ```
 
 #### FOREACH LOOP ####
+Added (ES5)
+Lists each item in array. 
 
+* array.forEach(function(currentValue, index, arr), this Value) *
+
+```
 for (var i=0; i<todosLength; i++) {
 
 	console.log (todos[i],i);
@@ -96,7 +101,6 @@ for (var i=0; i<todosLength; i++) {
 
 todos.forEach(function(todo,i){
 	console.log(todo,i);
-
 
 })
 	
