@@ -78,6 +78,7 @@ var counterTwo = 10
 also loops through a block of code while a specified condition is true
 However it exceutes code block once before checking if condition is true. So will always execute once even if condition is false. 
 
+
 ```
 do {
 	console.log(counterTwo);
