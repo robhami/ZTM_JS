@@ -1,0 +1,22 @@
+array=[1,2,3,4];
+answer=5;
+result=[];
+
+for (i=0; i<array.length; i++){
+
+	console.log("i: ", array[i]);
+	
+	for(j=i+1; j<array.length; j++) {
+		
+		console.log("j: ",array[j]);
+
+		if((array[i]+array[j])===answer){
+
+			result.push(array[i],array[j])
+			console.log("result: ", result)	
+			result=[];
+		}
+
+	}
+
+}
