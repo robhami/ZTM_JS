@@ -88,12 +88,14 @@ do {
 
 #### FOREACH LOOP ####
 Added (ES5)
-Lists each item in array and does function on them. 
+Lists each item in array and does function on them.
+
 *array.forEach(function(currentValue, index, arr), this Value)*
-	function	Required. A function to be run for each element
-	currentValue	Required. The value of the current element
-	index		Optional. The array index of the current element
-	arr		Optional. The array object the current element belongs to
+
+*function	Required. A function to be run for each element
+*currentValue	Required. The value of the current element
+*index		Optional. The array index of the current element
+*arr		Optional. The array object the current element belongs to
 
 ```
 for (var i=0; i<todosLength; i++) {
