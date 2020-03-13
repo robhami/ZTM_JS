@@ -1,0 +1,48 @@
+array=[1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
+let tempArray=[];
+let masterArray=[];
+let stringArray=[];
+let numArray=[];
+
+array.sort(function(a,b){return a-b});
+
+for (j=0; j<array.length; j++){
+
+	if(typeof(array[j])==='string'){
+		console.log(j);
+		stringArray.push(array[j]);
+		array.splice(j,1);
+		j--;
+
+	}
+
+}
+
+stringArray.sort(function(a,b){return a-b});
+
+for (i=0; i<array.length; i++){
+
+	if(array[i]===array[i+1]){
+		
+		tempArray.push(array[i]);
+
+	} else if (array[i]===array[i-1]){
+		tempArray.push(array[i]);
+		masterArray.push(tempArray);
+		tempArray=[];
+	}
+
+	else if (array[i]!=array[i-1]){
+		masterArray.push(array[i]);
+	}
+
+}
+console.log(stringArray.length);
+
+if(stringArray.length>0){
+	masterArray.push(stringArray);	
+}
+
+masterArray.sort(function(a,b){return a-b});
+
+console.log(masterArray);
