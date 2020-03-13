@@ -49,7 +49,7 @@ console.log (todos);
 Loops through a block of code while a specified condition is true.
 Need to increase or decrease variable used in the condition otherwisw loop never ends and it crashes. 
 
-#####Counting Up#####
+##### Counting Up #####
 ```
 var counterOne=0;
 
@@ -60,7 +60,7 @@ while(counterOne<10) {
 }
 ```
 
-#####Counting Down#####
+##### Counting Down #####
 
 ```
 var counterOne=10;
@@ -88,9 +88,12 @@ do {
 
 #### FOREACH LOOP ####
 Added (ES5)
-Lists each item in array. 
-
-* array.forEach(function(currentValue, index, arr), this Value) *
+Lists each item in array and does function on them. 
+*array.forEach(function(currentValue, index, arr), this Value)*
+	function	Required. A function to be run for each element
+	currentValue	Required. The value of the current element
+	index		Optional. The array index of the current element
+	arr		Optional. The array object the current element belongs to
 
 ```
 for (var i=0; i<todosLength; i++) {
@@ -104,3 +107,4 @@ todos.forEach(function(todo,i){
 
 })
 	
+```
