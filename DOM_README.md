@@ -13,15 +13,28 @@ Javascript can do the following with the DOM:
 #### DOM Selectors ####
 
 Created HTML with a shopping list and can use following selectors to get elements
+
 ```
 document.getElementsByTagname("h1");
+<[h1]
 
 document.getElementsByClassName("second");
+<[p.second]
 
-document.getElementsById("first");
 
+```
+Note below only one element (no plural) cos can only be one ID, this returns the full element as opposed to what looks like an array above.
+
+```
+document.getElementById("first");
+<p id="first">Get it done today</p>
+
+```
+ To be able to access the above using className I'll have to do second then the zero index of the array:
+
+```
 document.getElementsByClassName("second")[0];
-> <
+><p id="first">Get it done today</p>
 
 <!DOCTYPE html>
 <html>
@@ -34,7 +47,7 @@ document.getElementsByClassName("second")[0];
   <p id="first">Get it done Today</p>
   <p class="second">No excuses</p>
 <ul>
-	<li>Tea </li>
+	<li random="23">Tea </li>
 	<li>Chicken </li>
 	<li>Soup </li>
 	<li>Pies </li>
