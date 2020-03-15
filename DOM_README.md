@@ -1,4 +1,4 @@
-# ZeroToMastery
+# ZeroToMastery- The DOM
 
 Javascript can do the following with the DOM: 
 
@@ -74,6 +74,14 @@ document.querySelector("li").setAttribute("random", "1000")
 
 document.querySelector("li");
 < <li random="1000">Notebook</li>
+
+```
+#### Changing Styles ####
+
+document.querySelector("h1").style.background = "yellow";
+
+```
+Problem is you are effectively writing inline css.
 
 
 
