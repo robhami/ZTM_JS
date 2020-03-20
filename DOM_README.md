@@ -77,11 +77,41 @@ document.querySelector("li");
 
 ```
 ### Changing Styles ###
+
+
+#### Change style property ####
 ```
 document.querySelector("h1").style.background = "yellow";
 ```
 
 Problem is you are effectively writing inline css.
+
+
+#### Changing class #####
+
+**className**
+```
+var h1 = document.querySelector("h1");
+
+h1.className ="coolTitle";
+
+```
+**classList.add.remove.toggle**
+
+Returns class names of an element. Property is useful to add, remove and toggle.
+```
+
+document.querySelector ("li").classList
+
+document.querySelector ("li").classList.add("coolTitle");
+
+document.querySelector ("li").classList.remove("coolTitle");
+
+document.querySelector ("li").classList.add("done");
+
+document.querySelector ("li").classList.toggle("done");
+
+
 
 #### Shopping List Code ####
 
@@ -97,20 +127,46 @@ Problem is you are effectively writing inline css.
   <p id="first">Get it done Today</p>
   <p class="second">No excuses</p>
 <ul>
-	<li random="23">Tea </li>
+	<li class="bold red" random="23">Tea </li>
 	<li>Chicken </li>
 	<li>Soup </li>
 	<li>Pies </li>
 	<li>More Pies </li>
 	<li>Ice Cream </li>
 	
-
 </ul>
 </body>
 </html>
-
 <script type="text/javascript" src="script.js">
 	
-
 </script>
 ```
+
+#### Cool Tile Code ####
+
+```
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 40px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+}
+
+.done {
+  text-decoration: line-through;
+}
+```
+
