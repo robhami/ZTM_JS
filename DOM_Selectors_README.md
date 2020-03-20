@@ -1,4 +1,4 @@
-# ZeroToMastery- The DOM
+# ZeroToMastery- DOM Selectors
 
 Javascript can do the following with the DOM: 
 
