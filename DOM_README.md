@@ -10,9 +10,9 @@ Javascript can do the following with the DOM:
 * Javascript can react to all existing HTML events in the page
 * Javascript can create new HTML events in the page
 
-#### DOM Selectors ####
+### DOM Selectors ###
 
-##### getElementsBy #####
+#### getElementsBy ####
 
 Created HTML with a shopping list and can use following selectors to get elements
 
@@ -35,7 +35,7 @@ document.getElementsByClassName("second")[0];
 ><p id="first">Get it done today</p>
 ```
 
-##### querySelector #####
+#### querySelector ####
 
 ```
 document.querySelector("h1");
@@ -56,7 +56,7 @@ document.querySelectorAll ("li","h1");
 < (7) [h1, li, li, li, li, li, li]
 ```
 
-##### getAttribute #####
+#### getAttribute ####
 
 Need to elect element with query selector first then use getAttribute:
 
@@ -66,7 +66,7 @@ document.querySelector("li").getAttribute("random")
 
 ```
 
-##### setAttribute #####
+#### setAttribute ####
 
 ```
 document.querySelector("li").setAttribute("random", "1000")
@@ -77,14 +77,13 @@ document.querySelector("li");
 
 ```
 #### Changing Styles ####
-
-document.querySelector("h1").style.background = "yellow";
-
 ```
+document.querySelector("h1").style.background = "yellow";
+```
+
 Problem is you are effectively writing inline css.
 
-
-
+#### Shopping List Code ####
 
 <!DOCTYPE html>
 <html>
