@@ -76,7 +76,7 @@ document.querySelector("li");
 < <li random="1000">Notebook</li>
 
 ```
-#### Changing Styles ####
+### Changing Styles ###
 ```
 document.querySelector("h1").style.background = "yellow";
 ```
@@ -85,6 +85,7 @@ Problem is you are effectively writing inline css.
 
 #### Shopping List Code ####
 
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -112,4 +113,4 @@ Problem is you are effectively writing inline css.
 	
 
 </script>
-
+```
