@@ -1,0 +1,128 @@
+var button = document.getElementById("enter");
+
+var input = document.getElementById("userInput");
+
+var ul = document.querySelector("ul");
+
+var createButton =document.createElement("button");
+var deleteButton =createButton.appendChild(document.createTextNode("Delete"));
+var listItems =document.getElementsByTagName("li");
+
+function inputLength() {
+
+	return input.value.length;
+}
+
+function createListElement() {
+
+var li =document.createElement("li");
+	li.appendChild(document.createTextNode(input.value));
+	ul.appendChild(li);
+	input.value="";
+
+}
+
+
+function addListAfterClick(){
+	if(inputLength()>0) {
+	createListElement();
+	}
+
+}
+
+function addListAfterKeypress(event) {
+
+if(inputLength()>0 && event.keyCode === 13) {
+	
+	createListElement();
+	
+	}
+
+}
+
+
+function listDone () {
+	
+	var target = event.target;
+
+			if (target.matches("li")){
+			target.classList.toggle("done");
+			
+				addDelete();
+			}
+
+		} 
+
+
+function listLength () {
+
+	return listItems.length;
+}
+
+function addDelete () {
+
+	for (i=0;i<listLength();i++) {
+
+		var createButton =document.createElement("button");
+		var deleteButton =createButton.appendChild(document.createTextNode("Delete"));
+
+			if (listItems[i].classList.contains("done") && (listItems[i].children.length<1))  {
+
+				listItems[i].appendChild(createButton);
+				console.log(listItems[i].children);
+
+			createButton.onclick = removeParent;
+
+			}
+		}
+
+}
+	
+function removeParent () {
+
+	event.target.parentElement.remove();
+}
+
+button.addEventListener("click", addListAfterClick)
+
+input.addEventListener("keypress", addListAfterKeypress)
+
+ul.addEventListener("click", listDone)
+	
+//button.addEventListener("click", deleteItem )	
+
+	
+
+
+
+
+
+
+//del.addEventListener("click", function(){
+
+//	console.log("click delete")
+
+//})
+
+
+// var button = document.getElementsByTagName("button")[0];
+
+
+// button.addEventListener("click", function() {
+
+// 	console.log("CLICK!");
+
+
+// })
+
+// button.addEventListener("mouseenter", function() {
+
+// console.log("mouseenter");
+
+// })
+
+// button.addEventListener("mouseleave", function() {
+
+// console.log("mouseleave");
+
+// })
