@@ -111,7 +111,50 @@ document.querySelector ("li").classList.add("done");
 
 document.querySelector ("li").classList.toggle("done");
 
+```
 
+#### Parent and child elements ####
+
+Use index to determine which list element (it defaults to first if empty: 
+
+```
+document.querySelectorAll("li")[1];
+< <li>Chicken</li>
+```
+Can select an element's parent: 
+
+```
+document.querySelectorAll ("li")[1].parentElement;
+< <ul>
+	<li class="bold red done">Tea </li>
+	<li>Chicken </li>
+	<li>Soup </li>
+	<li>Pies </li>
+	<li>More Pies </li>
+	<li>Ice Cream </li>
+</ul>
+```
+Or parent of parent: 
+
+```
+document.querySelectorAll ("li")[1].parentElement.parentElement;
+< <body></body>
+
+document.querySelectorAll ("li")[1].parentElement.parentElement.parentElement;
+< <html></html>
+```
+This gives all the children of the body: 
+
+```
+document.querySelectorAll ("li")[1].parentElement.parentElement.children;
+< [h1, p#first, p.seconf, ul, first: p#first]
+```
+
+Important to cache selectors in variables. Saves memory
+
+```
+var h1 = document.querySelector("h1");
+```
 
 #### Shopping List Code ####
 
