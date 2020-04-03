@@ -63,7 +63,7 @@ Used to find a range of characters:
 
 
 
-Using test()
+##### Using test() #####
 The test() method is a RegExp expression method.
 
 It searches a string for a pattern, and returns true or false, depending on the result.
@@ -86,7 +86,7 @@ Dont have to use variable:
 /e/.test("The best things in life are free!");
 ```
 
-Using exec()
+##### Using exec() #####
 The exec() method is a RegExp expression method.
 
 It searches a string for a specified pattern, and returns the found text as an object.
