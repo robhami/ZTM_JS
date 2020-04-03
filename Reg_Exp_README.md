@@ -36,29 +36,29 @@ var res = str.replace(/microsoft/i, "W3Schools");
 
 ##### Modifiers #####
 
-i= case insenstive
-g= global match (find all matches rather than stopping at 1st match)
-m= multiline matching (check multiple lines)
+- i= case insenstive
+- g= global match (find all matches rather than stopping at 1st match)
+- m= multiline matching (check multiple lines)
 
 ##### Brackets ######
 
 Used to find a range of characters: 
 
-[abc] Find any of charaters in brackets
-[0-9] Find any of digits between the brackets
-(x|y) Find any of the alternatives separated with |
+- [abc] Find any of charaters in brackets
+- [0-9] Find any of digits between the brackets
+- (x|y) Find any of the alternatives separated with |
 
 ##### Metacharacters #####
-\d Find digit
-\s Find whitespace character
-\b  Find a match at the begining of a word like this: \bWORD, or at the end of a word like this: WORD\b
-\uxxxx Find the unicode chracter specified by the hexadecimal number xxxx
+- \d Find digit
+- \s Find whitespace character
+- \b  Find a match at the begining of a word like this: \bWORD, or at the end of a word like this: WORD\b
+- \uxxxx Find the unicode chracter specified by the hexadecimal number xxxx
 
 #### Quantifiers ####
 
-n+ Matches any string that contains at least one n
-n* Matches any string that contains zero or more occurences of n
-n? Matches any string that contains zero or one occurences of n
+- n+ Matches any string that contains at least one n
+- n* Matches any string that contains zero or more occurences of n
+- n? Matches any string that contains zero or one occurences of n
 
 
 
