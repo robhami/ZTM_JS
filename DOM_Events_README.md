@@ -62,4 +62,6 @@ input.addEventListener("keypress", function (event){
   }
 ```
 
-Wrote code in class can create link to it. 
+Wrote code in class can create link to it.
+
+[Link](https://github.com/robhami/ZeroToMastery/blob/master/DOM_Events_Code_Script)
