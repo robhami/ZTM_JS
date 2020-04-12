@@ -64,17 +64,22 @@ input.addEventListener("keypress", function (event){
 
 Wrote code in class can create link to it.
 
-[Link](https://github.com/robhami/ZeroToMastery/blob/master/DOM_Events_Code_Script)
+[Link to code script](https://github.com/robhami/ZeroToMastery/blob/master/DOM_Events_Code_Script)
 
 In the code you saw something interesting:
 
 Event listener syntax : 
+
 ```
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
 ```
+
 You didn't see the function being called like this as you may have expected: 
+
 ```
 button.addEventListener("click", addListAfterClick());
 input.addEventListener("keypress", addListAfterKeypress(event))
 ```
+
+This is something called a callback function. When that line of javascript runs, we don't want the addListAfterClick function to run because we are just adding the event listener now to wait for click or keypress. We want to let it know though that we want this action to happen when a click happens. So the function now automatically gets run (gets added the ()) every time the click happens. So we are passing a reference to the function without running it.
