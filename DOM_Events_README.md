@@ -65,3 +65,16 @@ input.addEventListener("keypress", function (event){
 Wrote code in class can create link to it.
 
 [Link](https://github.com/robhami/ZeroToMastery/blob/master/DOM_Events_Code_Script)
+
+In the code you saw something interesting:
+
+Event listener syntax : 
+```
+button.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListAfterKeypress);
+```
+You didn't see the function being called like this as you may have expected: 
+```
+button.addEventListener("click", addListAfterClick());
+input.addEventListener("keypress", addListAfterKeypress(event))
+```
