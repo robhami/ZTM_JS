@@ -47,9 +47,9 @@ const flattened =[[0, 1], [2, 3], [4, 5]].reduce(
   }
   , []);
   
-  
+  ```
  This pauses it at the debugger but shows accumulator and array: 
- 
+``` 
   const flattened =[[0, 1], [2, 3], [4, 5]].reduce(
 
   (a, b) => { a=[], b= (2) [0,1]
@@ -57,7 +57,7 @@ const flattened =[[0, 1], [2, 3], [4, 5]].reduce(
   a.concat(b)
   }
   , []);
-  
+  ```
   can use step over to go to next line. Also shows variables in scope on right and context (i.e. this value).
   
   
