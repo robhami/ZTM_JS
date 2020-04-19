@@ -1,6 +1,7 @@
 # ZeroToMastery
 
-Resources: Customizing Sublime Text 3
+Resources: Customizing Sublime Text 3.
+
 Here are my recommended resources to get your Sublime Text personalized:
 
 1.  [Material Theme](https://github.com/equinusocio/material-theme)
