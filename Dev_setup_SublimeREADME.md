@@ -10,13 +10,13 @@ Here are my recommended resources to get your Sublime Text personalized:
 
 My recommended packages to install (command + shift +p):
 
-Babel
-SidebarEnhancements
-A File Icon
-GitGutter
-BracketHighlighter
+*Babel
+*SidebarEnhancements
+*A File Icon
+*GitGutter
+*BracketHighlighter
 
 Other options other than Sublime Text 3 (Both are free):
 
-[Atom](https://atom.io/)
-[Visual Studio Code](https://code.visualstudio.com/)
+*[Atom](https://atom.io/)
+*[Visual Studio Code](https://code.visualstudio.com/)
