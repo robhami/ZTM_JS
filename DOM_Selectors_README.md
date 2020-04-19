@@ -37,6 +37,8 @@ document.getElementsByClassName("second")[0];
 
 #### querySelector ####
 
+querySelector() method returns the first element that matches a specified CSS selector(s) in the document. To get all elements use querySelectorAll
+
 ```
 document.querySelector("h1");
 < <h1>Shopping List</h1>
