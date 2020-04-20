@@ -123,7 +123,8 @@ var user = {
 A function inside an object is a method. So shout is a method of user. 
 
 For arrays method would be like
-``
+
+```
 list.pop()
 
 console.log()
