@@ -154,6 +154,8 @@ list2=[];
 <undefined
 
 ```
+can't access properties of empty arrays or objects cos there are none. So this reminds us of when we don't declare a variable we get "undefined" but with an object and a list we can have something empty and it's not undefined. 
+
 #### Null ####
 
 ```
