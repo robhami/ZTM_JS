@@ -31,6 +31,7 @@ To add properties to object:
 >user.favouriteFood="Spinach";
 <"spinach"
 
+```
 To change values of an object:
 
 ```
