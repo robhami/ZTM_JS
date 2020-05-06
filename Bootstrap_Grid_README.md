@@ -54,4 +54,28 @@ Can also add medium columns with different numbers that only kick in when window
 			</div>
 		</div>
 
-		
+```
+small - col-sm-xx
+medium- col-md-xx
+large- col-lg-xx
+extra large -col-xl-xx
+
+
+```
+<div class="row">
+	<div class="col col-sm-6 col-md-12 col-lg-12">
+		col col-sm-6 col-md-12 col-lg-12
+	</div>
+	<div class="col col-sm-3 col-md-6 col-lg-12">
+		col col-sm-6 col-md-6 col-lg-12
+	</div>
+	<div class="col col-sm-4 col-md-6 col-lg-12">
+		col col-sm-6 col-md-6 col-lg-12
+	</div>
+</div>
+
+```
+
+http://zeromasterywebdev-com.stackstaging.com/Bootstrap/
+
+
