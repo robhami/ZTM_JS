@@ -1,6 +1,12 @@
-# ZeroToMastery Bootstrap Grid
+# ZeroToMastery Bootstrap Grid & other BS 
 
 
+Need this in header: 
+
+```
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+```
 
 Bootstrap has grid system broken into 12 column widths. 
 So in below code first column uses 6 lines (columns) and second uses 3 & third uses 3. Therefore all 12 spaces are used. 
