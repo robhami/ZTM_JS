@@ -11,7 +11,7 @@ Clone or download- select HTTPS. Copy url.
 #### 2. git clone cmd ####
 Then go to terminal, navigate to folders, then use **git clone** command:
 
-```
+```gitattributes
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS
 $ ls
 'advanced control flow'/   advanced_functions/   advanced_objects/   coding_exe/         ES10/   ES8/         how_js_works/         Loops/                            scope/       units_converter/
