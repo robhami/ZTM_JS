@@ -2,10 +2,12 @@
 
 Can publish repositories online. Go to settings in repository and enable GitHub Pages
 
+#### 1. Starting Project ####
 Create repository
 
 Clone or download- select HTTPS. Copy url. 
 
+#### 2. Clone cmd ####
 Then go to terminal, navigate to folders, then use **git clone** command:
 
 ```
@@ -36,8 +38,10 @@ Receiving objects: 100% (3/3), done.
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen
 ```
 
-THis adds folder called background generator to folders in Windows. The .git file allows communication with GitHub. 
-Can now copy and paste code files (index.html  script.js  style.css) and put them into background generator folder that was created when folder cloned. 
+This adds folder called background generator to folders in Windows. The .git file allows communication with GitHub. 
+Can now copy and paste code files (index.html  script.js  style.css) and put them into background generator folder that was created when folder cloned. You can check status with the **git status** command.
+
+#### 3. Git Status Command ####
 
 ```
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen
@@ -54,7 +58,7 @@ $ ls
 index.html  README.md  script.js  style.css
 
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen/background-generator (master)
-**$ git status**
+$ git status
 On branch master
 Your branch is up to date with 'origin/master'.
 
@@ -67,8 +71,9 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 ```
-gits status tells us we have untracked files. Too update them use git add command: 
+gits status tells us we have untracked files. Too update them use **git add** command: 
 
+#### 4. git add command ####
 ```
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen/background-generator (master)
 $ git add index.html script.js style.css
@@ -89,8 +94,10 @@ Changes to be committed:
         new file:   style.css
 ```
 
-Need to now commit, adding a message:
+Need to now commit to changes (using **git commit**) and add a message (using **-m**):
 
+
+#### 5. git commit command (and -m command) ####
 ```
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen/background-generator (master)
 $ git commit -m "adding starting project"
@@ -101,11 +108,12 @@ $ git commit -m "adding starting project"
  create mode 100644 style.css
 ```
 
-Then we need to push it to the repository: 
+Then we need to push it to the repository using **git push**: 
 
+#### 6. git push command ####
 ```
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen/background-generator (master)
-***$ git push***
+$ git push
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
 Delta compression using up to 8 threads
