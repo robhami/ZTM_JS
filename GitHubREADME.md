@@ -1,5 +1,6 @@
 # ZeroToMastery GitHub
 
+#### Misc info ####
 Can publish repositories online. Go to settings in repository and enable GitHub Pages
 
 #### 1. Starting Project ####
@@ -7,7 +8,7 @@ Create repository
 
 Clone or download- select HTTPS. Copy url. 
 
-#### 2. Clone cmd ####
+#### 2. git clone cmd ####
 Then go to terminal, navigate to folders, then use **git clone** command:
 
 ```
@@ -28,7 +29,7 @@ $ ls
 index.html  script.js  style.css
 
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen
-**$ git clone https://github.com/robhami/background-generator.git**
+$ git clone https://github.com/robhami/background-generator.git
 Cloning into 'background-generator'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
@@ -41,7 +42,7 @@ Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen
 This adds folder called background generator to folders in Windows. The .git file allows communication with GitHub. 
 Can now copy and paste code files (index.html  script.js  style.css) and put them into background generator folder that was created when folder cloned. You can check status with the **git status** command.
 
-#### 3. Git Status Command ####
+#### 3. git status command ####
 
 ```
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen
