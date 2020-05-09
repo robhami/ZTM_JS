@@ -6,7 +6,7 @@ Create repository
 
 Clone or download- select HTTPS. Copy url. 
 
-Then go to terminal:
+Then go to terminal, navigate to folders, then use **git clone** command:
 
 ```
 Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS
