@@ -127,7 +127,41 @@ To https://github.com/robhami/background-generator.git
 
 Files are now on GitHub. 
 
+#### Create another user and edit/update files ####
 
+Can now create another user folder the same way using the index etc files. 
+**If edit then save the index.html in the folder with the .git folder. Then check git status. It will show it has changed:**
+
+```
+Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/git/background_gen_2/background-generator (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+To add files can use add command (can also use . period to add all files): 
+```
+Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/git/background_gen_2/background-generator (master)
+$ git add index.html
+
+Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/git/background_gen_2/background-generator (master)
+$ add .
+bash: add: command not found
+
+Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/git/background_gen_2/background-generator (master)
+$ git add .
+
+Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/git/background_gen_2/background-generator (master)
+$
+
+```
+Then do steps as before, add, commit, push. This then updates index.html but has the previous versions under commits. 
 
 
 
