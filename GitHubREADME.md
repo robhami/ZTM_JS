@@ -161,7 +161,9 @@ Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/git/background_ge
 $
 
 ```
-Then do steps as before, add, commit, push. This then updates index.html but has the previous versions under commits. 
+Then do steps as before- commit and push commands. This then updates index.html but has the previous versions under commits.
+
+#### git pull command ####
 
 
 
