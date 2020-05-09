@@ -40,7 +40,7 @@ Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/JS/bground_gen
 ```
 
 This adds folder called background generator to folders in Windows. The .git file allows communication with GitHub. 
-Can now copy and paste code files (index.html  script.js  style.css) and put them into background generator folder that was created when folder cloned. You can check status with the **git status** command.
+**Can now copy and paste code files (index.html  script.js  style.css) and put them into background generator folder** that was created when folder cloned. You can check status with the **git status** command.
 
 #### 3. git status command ####
 
@@ -124,3 +124,12 @@ Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/robhami/background-generator.git
    dcf97de..18fdb05  master -> master
 ```
+
+Files are now on GitHub. 
+
+
+
+
+
+
+
