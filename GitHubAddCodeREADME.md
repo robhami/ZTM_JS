@@ -1,4 +1,4 @@
-# ZeroToMastery GitHub
+# ZeroToMastery GitHub Add Code
 
 #### Misc info ####
 Can publish repositories online. Go to settings in repository and enable GitHub Pages
