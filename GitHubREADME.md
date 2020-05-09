@@ -165,6 +165,25 @@ Then do steps as before- commit and push commands. This then updates index.html 
 
 #### git pull command ####
 
+To pull the latest version to the other user's folder use the git pull command:
+
+```
+Rob@Rob-Laptop MINGW64 ~/Documents/My Websites/zero to mastery/js/bground_gen/background-generator (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), 281 bytes | 0 bytes/s, done.
+From https://github.com/robhami/background-generator
+   18fdb05..7238829  master     -> origin/master
+Updating 18fdb05..7238829
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ ```
+ 
+ 
 
 
 
