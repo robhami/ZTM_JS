@@ -58,13 +58,8 @@ In console:
 >a()
 <window
 ```
-
-
-
+function a is still in window.
 However:
-
-
-
 
 ```
 const object4={
@@ -75,7 +70,6 @@ const object4={
 }
 
 ```
-
 In console: 
 
 ```
@@ -83,7 +77,12 @@ In console:
 <{a:f}
 
 ```
+This returns object4 as "this". 
 
+Context is important with instantiation- where you make a copy of an object and reuse the code. 
+
+
+```
 class Player {
 	constructor (name,type) {
 		console.log('player', this);
