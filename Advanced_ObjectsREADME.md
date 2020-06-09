@@ -28,25 +28,62 @@ In console:
 >object 1 === object 3
 < false
 ```
+This is because object is a unique reference (i.e. reference type). This is because you create new object 3 in "new box" and that box is different to object 1. The value is the same but not the reference.
 
 Until now all types e.g. 1, true, null, boolean, are all defined by programming language (i.e. JS). These are primitive types (i.e. langauge tells what they are)
 
 Whereas a reference type, is a non primitive type not defined by programming language but created by programmer. Programmer creates new object that is like an address that is unique. 
-This is because you create new object 3 in "new box" and that box is different to object 1. The value is the same but not the reference 
+ 
+### Context ###
+gets confused with scope. 
+
+Its where we are inside object. 
 
 ```
-const object4 ={
+>console.log(this);
+<window
+```
+"this" means what is the object we are in now
 
-	a: function() {
+If you create: 
 
-		//console.log(this);
+```
+function a() {
+	console.log(this);
+}
+```
+In console:
+
+```
+>a()
+<window
+```
+
+
+
+However:
+
+
+
+
+```
+const object4={
+	a: function () {
+		console.log(this);
 	}
+
 }
 
 ```
 
+In console: 
 
 ```
+>object 4a
+<{a:f}
+
+```
+
 class Player {
 	constructor (name,type) {
 		console.log('player', this);
