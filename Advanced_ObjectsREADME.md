@@ -2,7 +2,7 @@
 
 ### Reference types ###
 
-In console: 
+In console (note arrays are objects): 
 
 ```
 > [] === []
