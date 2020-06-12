@@ -87,10 +87,10 @@ Context is important with instantiation- where you make a copy of an object and 
 A class is something I want to make a copy of name of class (e.g. Player) needs to have capital letter at start. 
 
 #### Constructor ####
-Every time you make a copy of the calss. The first thing that gets run is the constructor function. This will create the listed properties (e.g. name and type) on the "Player" object.
+Every time you make a copy of the class. The first thing that gets run is the constructor function. This will create the listed properties (e.g. name and type) on the "Player" object.
 
 #### Method ####
-Create a method such as 'introduce()' that console.logs a template string (using backticks as per standard template) that uses name and type from constructor. Need to 
+Create a method such as 'introduce()' that console.logs a template string (using backticks as per standard template) that uses name and type from constructor. 
 
 
 ```
