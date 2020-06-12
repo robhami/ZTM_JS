@@ -132,10 +132,10 @@ Then constructor in Wizard class. It then goes to constructor in Wizard class an
 
 If go to wizard1 and say play I get "WEEE I'm a Healer", because Shelley is a healer.
 
-
+```
 const wizard1 = new Wizard ('Shelly', 'Healer');
 const wizard2 = new Wizard ('Shawn', 'Dark Magic');
-
+```
 Console.logs show that Wizard is created and player is created: 
 
 ```
