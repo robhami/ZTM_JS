@@ -61,6 +61,60 @@ input.addEventListener("keypress", function (event){
     }
   }
 ```
+* Added by RH: Please note that keyCode gave problems when using for calculator as could not detect values where shift keys used (e.g. -=+). Used key instead:
+
+```
+userInput.addEventListener("keyup", keyEntry)
+
+ function keyEntry (event) {	
+	let numSelect=event.key;
+	// console.log("key: ", keyCodeVal);
+	
+	// let numSelect = String.fromCharCode(keyCodeVal);
+	console.log("numSelect: ", numSelect);
+
+
+	let numKey = /[0-9]/;
+	let operator = /[+-/*]/;
+	let equalsym = /[=]/;
+	let decKey = /[.]/;
+
+	kp = true;
+	clearZero();
+
+	if (numKey.test(numSelect)) {
+		console.log("valid: ",numSelect);	
+		num(numSelect, kp);
+	}
+
+	if (operator.test(numSelect)) {
+		console.log("valid: ",numSelect);
+		opera(numSelect, kp);	
+
+	}
+
+	if (equalsym.test(numSelect)) {
+		console.log("valid: ",numSelect);
+		kp = true;
+		equals(numSelect);	
+
+	}
+
+	if (decKey.test(numSelect)) {
+		console.log("valid: ",numSelect);
+		dec(numSelect, kp);	
+
+	}
+
+ 	scroll();
+
+}
+```
+
+
+
+
+
 
 Wrote code in class can create link to it.
 
