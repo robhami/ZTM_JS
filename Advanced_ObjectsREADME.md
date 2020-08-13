@@ -34,6 +34,8 @@ Until now all types e.g. 1, true, null, boolean, are all defined by programming 
 
 Whereas a reference type, is a non primitive type not defined by programming language but created by programmer. Programmer creates new object that is like an address that is unique. 
 
+
+
 ### Methods (from W3 schools) ###
 
 JavaScript methods are actions that can be performed on objects.
@@ -290,3 +292,9 @@ function Person(first, last, age, eyecolor) {
 Person.prototype.name = function() {
   return this.firstName + " " + this.lastName;
 };
+```
+### Creating JS Object from W3 schools ###
+* Define and create a single object, using object literal
+* Define and create a single object, with the keyword new.
+* DEfine an object constructor, and the craete objects of the constructed type.
+* Can now use (in ES5) Object.create ().
