@@ -33,7 +33,74 @@ This is because object is a unique reference (i.e. reference type). This is beca
 Until now all types e.g. 1, true, null, boolean, are all defined by programming language (i.e. JS). These are primitive types (i.e. langauge tells what they are)
 
 Whereas a reference type, is a non primitive type not defined by programming language but created by programmer. Programmer creates new object that is like an address that is unique. 
- 
+
+### Methods (from W3 schools) ###
+
+JavaScript methods are actions that can be performed on objects.
+
+A JavaScript method is a property containing a function definition.
+
+```
+
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+```
+
+Methods are functions stored as object properties.
+
+#### Accessing Object Methods ####
+You access an object method with the following syntax:
+```
+objectName.methodName()
+```
+You will typically describe fullName() as a method of the person object, and fullName as a property.
+
+The fullName property will execute (as a function) when it is invoked with ().
+
+This example accesses the fullName() method of a person object:
+
+Example
+```
+name = person.fullName();
+```
+If you access the fullName property, without (), it will return the function definition:
+
+Example
+```
+name = person.fullName;
+```
+
+#### Using Built-In Methods
+
+This example uses the toUpperCase() method of the String object, to convert a text to uppercase:
+
+```
+var message = "Hello world!";
+var x = message.toUpperCase();
+```
+
+The value of x, after execution of the code above will be:
+
+HELLO WORLD!
+
+#### Adding a Method to an Object ####
+
+Adding a new method to an object is easy:
+
+Example
+```
+person.name = function () {
+  return this.firstName + " " + this.lastName;
+};
+```
+
 ### Context ###
 gets confused with scope. 
 
@@ -194,3 +261,32 @@ wizard2.introduce()
 script.js:20 Hi I am Shawn, I'm a Dark Magic
 undefined
 ```
+
+### Prototype (from W3 schools) ###
+Using the prototype Property
+The JavaScript prototype property allows you to add new properties to object constructors:
+
+Example
+```
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.nationality = "English";
+```
+
+The JavaScript prototype property also allows you to add new methods to objects constructors:
+```
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName;
+};
