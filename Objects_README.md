@@ -51,7 +51,26 @@ var user = {
 };
 
 ```
+### CONVERT ARRAY TO OBJECT From Codewars test ###
 
+Not sure why [prop] needed and not just .prop. 
+```
+distTable=[
+  'X1', 100,  'X2',
+  200,  'X3', 250,
+  'X4', 300
+  ]
+  distObj={};
+  
+  for(k=0;k<distTable.length;k=k+2){  
+    let prop=distTable[k];
+    let value=distTable[k+1];
+    console.log(prop,value);
+    distObj[prop] = value; 
+  }
+  
+  console.log(distObj);
+ ```
 Can add array inside object:
 
 ```
