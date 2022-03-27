@@ -264,6 +264,46 @@ script.js:20 Hi I am Shawn, I'm a Dark Magic
 undefined
 ```
 
+### Classes from NetNinja utube ###
+
+If we want to create multiple versions (instances) of an object. Create a class then have a constructor function to create the new objects. Classes start with a capital letter. Can also have other functions that use values from the constructor.
+
+```
+class User {
+	constructor (email, name){
+		this.email=email
+		this.name=name
+	}
+	login(){
+		console.log(this.email, 'just logged in')
+	}
+	logout(){
+		console.log(this.email, 'just logged out')
+	}
+}
+
+```
+
+new keyword:
+-creates a new empty object
+-sets the value of 'this to be the new empty object
+- calls the constructor method
+```
+var userOne = new User('ryu@ninjas.com', 'Ryu')
+var userTwo = new User('yoshi@marioKorp.com', 'Yoshi')
+
+console.log(userOne)
+VM144:1 User {email: 'ryu@ninjas.com', name: 'Ryu'}
+undefined
+console.log(userTwo)
+VM186:1 User {email: 'yoshi@marioKorp.com', name: 'Yoshi'}
+undefined
+```
+Can also run the functions like so using the new instances:
+
+
+
+
 ### Prototype (from W3 schools) ###
 Using the prototype Property
 The JavaScript prototype property allows you to add new properties to object constructors:
