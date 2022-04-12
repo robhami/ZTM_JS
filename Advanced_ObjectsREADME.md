@@ -291,7 +291,9 @@ new keyword:
 ```
 var userOne = new User('ryu@ninjas.com', 'Ryu')
 var userTwo = new User('yoshi@marioKorp.com', 'Yoshi')
-
+```
+Can also run the functions like so using the new instances:
+```
 console.log(userOne)
 VM144:1 User {email: 'ryu@ninjas.com', name: 'Ryu'}
 undefined
@@ -299,7 +301,7 @@ console.log(userTwo)
 VM186:1 User {email: 'yoshi@marioKorp.com', name: 'Yoshi'}
 undefined
 ```
-Can also run the functions like so using the new instances:
+
 
 
 
