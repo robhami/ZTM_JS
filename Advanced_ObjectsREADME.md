@@ -302,10 +302,45 @@ VM186:1 User {email: 'yoshi@marioKorp.com', name: 'Yoshi'}
 undefined
 ```
 
+Can chain methods by adding return this to methods, so can run multiple methods on one object:
+
+```
+class User {
+	constructor (email, name){
+		this.email=email
+		this.name=name
+		this.score=0
+	}
+	login(){
+		console.log(this.email, 'just logged in')
+		return this
+	}
+	logout(){
+		console.log(this.email, 'just logged out')
+		return this
+	}
+	
+	updateScore(){
+		this.score++;
+		console.log(this.email, 'score is now', this.score)
+		return this
+	}
+}
 
 
+```
+can then run like this:
 
+```
 
+userOne.login().updateScore().logout();
+
+ryu@ninjas.com just logged in
+VM54:18 ryu@ninjas.com score is now 1
+VM54:12 ryu@ninjas.com just logged out
+User {email: 'ryu@ninjas.com', name: 'Ryu', score: 1}
+
+```
 ### Prototype (from W3 schools) ###
 Using the prototype Property
 The JavaScript prototype property allows you to add new properties to object constructors:
