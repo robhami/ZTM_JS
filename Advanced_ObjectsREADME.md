@@ -341,6 +341,44 @@ VM54:12 ryu@ninjas.com just logged out
 User {email: 'ryu@ninjas.com', name: 'Ryu', score: 1}
 
 ```
+
+### Class inheritance ###
+
+class that takes all the functionality/properties from another class. We dont need constructor as it takes from class it extends from (can have one if you want but not needed). deleteUser function cycles through users and if their email does not match called user email it return true. If its matches it will return false.
+
+```
+class Admin extends User {
+	deleteUser(user) {
+		users = users.filter(u =>{
+			return u.email != user.email
+		})
+	}
+	
+}
+
+let users =[userOne, userTwo]
+let admin = new Admin('shaun@ninja.com', 'shaun');
+
+admin.deleteUser(userTwo);
+console.log(users)
+
+```
+when run this returns:
+```
+[User]
+0: User {email: 'ryu@ninjas.com', name: 'Ryu', score: 0}
+length: 1
+[[Prototype]]: Array(0)
+```
+It uses Class User to login (i.e. use method). 
+
+```
+admin.login();
+VM342:8 shaun@ninja.com just logged in
+Admin {email: 'shaun@ninja.com', name: 'shaun', score: 0}
+```
+
+
 ### Prototype (from W3 schools) ###
 Using the prototype Property
 The JavaScript prototype property allows you to add new properties to object constructors:
