@@ -342,7 +342,7 @@ User {email: 'ryu@ninjas.com', name: 'Ryu', score: 1}
 
 ```
 
-### Class inheritance ###
+### Class inheritance NETNINJA ###
 
 class that takes all the functionality/properties from another class. We dont need constructor as it takes from class it extends from (can have one if you want but not needed). deleteUser function cycles through users and if their email does not match called user email it return true. If its matches it will return false.
 
@@ -377,7 +377,36 @@ admin.login();
 VM342:8 shaun@ninja.com just logged in
 Admin {email: 'shaun@ninja.com', name: 'shaun', score: 0}
 ```
+### Constructors (under the hood) ###
 
+Can do the same as constructors like this: 
+
+```
+function User (email, name) {
+	this.email = email;
+	this.name=name;
+	this.online=false;
+	this.login= function () {
+	
+		console.log(this.email, 'has logged in');
+	
+	}
+
+}
+
+var userOne = new User('ryu@ninjas.com', 'Ryu')
+var userTwo = new User('yoshi@marioKorp.com', 'Yoshi')
+
+console.log(userOne);
+userTwo.login();
+
+```
+When run this creates: 
+```
+User {email: 'ryu@ninjas.com', name: 'Ryu', online: false, login: ƒ}email: "ryu@ninjas.com"login: ƒ ()name: "Ryu"online: false[[Prototype]]: Object
+VM571:7 yoshi@marioKorp.com has logged in
+
+```
 
 ### Prototype (from W3 schools) ###
 Using the prototype Property
